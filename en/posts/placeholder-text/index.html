@@ -41,8 +41,8 @@
 </script>
 
 
-<link rel="icon" type="image/png" sizes="32x32" href="/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_32x32_fill_box_center_2.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_180x180_fill_box_center_2.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icon_hue5baedcac96101c4132c9be6c6d8d97f_7360_32x32_fill_box_center_2.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icon_hue5baedcac96101c4132c9be6c6d8d97f_7360_180x180_fill_box_center_2.png">
 
 <meta name="description"
   content="Lorem Ipsum Dolor Si Amet">
@@ -101,10 +101,6 @@
 
 
 <meta property="og:locale" content="en" />
-
-
-
-<meta property="og:locale:alternate" content="zh" />
 
 
 
@@ -170,7 +166,7 @@
         class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
         <div class="text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0" id="current-url"
             currenturl="/en/posts/placeholder-text/">
-            <a href="/en/about/"
+            <a href="/en/authors/walle/"
                 class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">About</a>
             <a href="/en/posts/"
                 class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">Posts</a>
@@ -190,19 +186,6 @@
                     <span class="px-4 py-1 hover:text-eureka">Light</span>
                     <span class="px-4 py-1 hover:text-eureka">Dark</span>
                     <span class="px-4 py-1 hover:text-eureka">Auto</span>
-                </div>
-            </div>
-            <div class="relative pt-4 pl-4 md:pt-0">
-                <div class="cursor-pointer hover:text-eureka" id="languageMode">
-                    <i class="fas fa-globe"></i>
-                    <span class="pl-1">English</span>
-                </div>
-                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open-lang">
-                </div>
-                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
-                    id='languageOptions'>
-                    <a class="px-4 py-1 hover:text-eureka" href="/en/posts/placeholder-text/">English</a>
-                    <a class="px-4 py-1 hover:text-eureka" href="/posts/placeholder-text/">中文</a>
                 </div>
             </div>
         </div>
@@ -231,7 +214,6 @@
     document.addEventListener('DOMContentLoaded', () => {
         getcolorscheme();
         switchBurger();
-        switchLanguage()
     });
 
     let currenturl = document.getElementById('current-url').getAttribute('currenturl')
