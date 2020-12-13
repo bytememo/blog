@@ -3,129 +3,129 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/about/</loc>
+    <loc>https://bytememo.com/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/about/"
+                href="https://bytememo.com/en/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/about/"
+                href="https://bytememo.com/about/"
                 />
   </url>
   
   <url>
-    <loc>/authors/</loc>
+    <loc>https://bytememo.com/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/authors/"
+                href="https://bytememo.com/en/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/authors/"
+                href="https://bytememo.com/authors/"
                 />
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://bytememo.com/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/"
+                href="https://bytememo.com/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/"
+                href="https://bytememo.com/"
                 />
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://bytememo.com/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/categories/"
+                href="https://bytememo.com/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/categories/"
+                href="https://bytememo.com/categories/"
                 />
   </url>
   
   <url>
-    <loc>/docs/</loc>
+    <loc>https://bytememo.com/docs/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/docs/"
+                href="https://bytememo.com/en/docs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/docs/"
+                href="https://bytememo.com/docs/"
                 />
   </url>
   
   <url>
-    <loc>/posts/</loc>
+    <loc>https://bytememo.com/posts/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/posts/"
+                href="https://bytememo.com/en/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/posts/"
+                href="https://bytememo.com/posts/"
                 />
   </url>
   
   <url>
-    <loc>/series/</loc>
+    <loc>https://bytememo.com/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/series/"
+                href="https://bytememo.com/en/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/series/"
+                href="https://bytememo.com/series/"
                 />
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://bytememo.com/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/tags/"
+                href="https://bytememo.com/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/tags/"
+                href="https://bytememo.com/tags/"
                 />
   </url>
   
   <url>
-    <loc>/authors/walle/</loc>
+    <loc>https://bytememo.com/authors/walle/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/authors/walle/"
+                href="https://bytememo.com/en/authors/walle/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="/authors/walle/"
+                href="https://bytememo.com/authors/walle/"
                 />
   </url>
   
