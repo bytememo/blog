@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; 2020 &lt;a href=&#34;https://bytememo.com/&#34;&gt;ByteMemo&lt;/a&gt;</copyright>
-    <lastBuildDate>Fri, 20 Nov 2020 22:52:56 +0800</lastBuildDate><atom:link href="/en/authors/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Dec 2020 14:23:07 +0800</lastBuildDate><atom:link href="/en/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Walle</title>
+      <link>/en/authors/walle/</link>
+      <pubDate>Sun, 13 Dec 2020 14:23:07 +0800</pubDate>
+      
+      <guid>/en/authors/walle/</guid>
+      <description>Self Introduction Nothing yet&amp;hellip;
+Details Nothing yet&amp;hellip;</description>
+    </item>
+    
     <item>
       <title>Example Author</title>
       <link>/en/authors/example-author/</link>
@@ -24,16 +34,6 @@
       
       <guid>/en/authors/hugo-authors/</guid>
       <description>Vestibulum vel arcu Donec interdum justo sed posuere imperdiet. Quisque nec mauris eu erat mattis egestas in vitae nisl. Sed nisl augue, congue sed quam quis, tempor tempus nibh. Pellentesque accumsan in quam a interdum. Morbi iaculis venenatis lacinia. Mauris quis nisl vitae nisi mollis placerat id vel ligula. Integer vitae arcu ac leo iaculis rhoncus id vitae dolor. Fusce quis nisl tincidunt, vulputate dolor quis, mollis massa. Donec congue velit at risus cursus, eu auctor dolor rhoncus.</description>
-    </item>
-    
-    <item>
-      <title>Walle</title>
-      <link>/en/authors/walle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/en/authors/walle/</guid>
-      <description>Self Introduction Nothing yet&amp;hellip;
-Details Nothing yet&amp;hellip;</description>
     </item>
     
   </channel>

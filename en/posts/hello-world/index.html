@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang='zh' ><meta charset="utf-8">
+<html lang='en' ><meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 
 
-<title>About | ByteMemo</title>
+<title>Hello World | ByteMemo</title>
 <link rel="stylesheet" href="/css/eureka.min.css">
 <script defer src="/js/eureka.min.js"></script>
 
@@ -45,7 +45,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_180x180_fill_box_center_2.png">
 
 <meta name="description"
-  content="Hugo, the world’s fastest framework for building websites">
+  content="Hello World This is my first post.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -53,12 +53,12 @@
   "itemListElement": [{
       "@type": "ListItem",
       "position": 1 ,
-      "name":"ByteMemo",
-      "item":"/"},{
+      "name":"Posts",
+      "item":"/en/posts/"},{
       "@type": "ListItem",
       "position": 2 ,
-      "name":"About",
-      "item":"/about/"}]
+      "name":"Hello World",
+      "item":"/en/posts/hello-world/"}]
 }
 </script><script type="application/ld+json">
 {
@@ -66,11 +66,15 @@
     "@type": "Article",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/about/"
+        "@id": "/en/posts/hello-world/"
     },
-    "headline": "About | ByteMemo","datePublished": "2019-02-28T00:00:00+00:00",
-    "dateModified": "2019-02-28T00:00:00+00:00",
-    "wordCount":  148 ,
+    "headline": "Hello World | ByteMemo","datePublished": "2020-12-13T14:23:07+08:00",
+    "dateModified": "2020-10-20T10:30:48+08:00",
+    "wordCount":  7 ,
+    "author": {
+        "@type": "Person",
+        "name": ["walle"]
+    },
     "publisher": {
         "@type": "Person",
         "name": "Walle",
@@ -79,28 +83,26 @@
             "url": "https://bytememo-1251943639.file.myqcloud.com/blog/20201213/walle-logo-125352.jpg"
         }
         },
-    "description": "Hugo, the world’s fastest framework for building websites"
+    "description": "Hello World This is my first post."
 }
-</script><meta property="og:title" content="About | ByteMemo" />
+</script><meta property="og:title" content="Hello World | ByteMemo" />
 <meta property="og:type" content="article" />
 
 
 <meta property="og:image" content="/images/icon.png">
 
 
-<meta property="og:url" content="/about/" />
+<meta property="og:url" content="/en/posts/hello-world/" />
 
 
 
-<meta property="og:description" content="Hugo, the world’s fastest framework for building websites" />
+
+<meta property="og:description" content="Hello World This is my first post." />
 
 
 
-<meta property="og:locale" content="zh" />
 
-
-
-<meta property="og:locale:alternate" content="en" />
+<meta property="og:locale" content="en" />
 
 
 
@@ -112,14 +114,14 @@
 
 
 
-<meta property="article:published_time" content="2019-02-28T00:00:00&#43;00:00" />
+<meta property="article:published_time" content="2020-12-13T14:23:07&#43;08:00" />
 
 
-<meta property="article:modified_time" content="2019-02-28T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2020-10-20T10:30:48&#43;08:00" />
 
 
 
-<meta property="article:section" content="" />
+<meta property="article:section" content="posts" />
 
 
 
@@ -135,7 +137,7 @@
     }
 </script>
 <nav class="flex items-center justify-between flex-wrap p-4">
-    <a href="/" class="mr-6 text-primary-text text-xl font-bold">ByteMemo</a>
+    <a href="/en" class="mr-6 text-primary-text text-xl font-bold">ByteMemo</a>
     <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
         <i class="fas fa-bars"></i>
     </button>
@@ -143,14 +145,14 @@
     <div id="target"
         class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
         <div class="text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0" id="current-url"
-            currenturl="/about/">
-            <a href="/about/"
+            currenturl="/en/posts/hello-world/">
+            <a href="/en/about/"
                 class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">About</a>
-            <a href="/posts/"
+            <a href="/en/posts/"
                 class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">Posts</a>
-            <a href="/archive/"
+            <a href="/en/archive/"
                 class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">Archive</a>
-            <a href="/docs/"
+            <a href="/en/docs/"
                 class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">Docs</a>
         </div>
 
@@ -166,19 +168,6 @@
                     <span class="px-4 py-1 hover:text-eureka">Light</span>
                     <span class="px-4 py-1 hover:text-eureka">Dark</span>
                     <span class="px-4 py-1 hover:text-eureka">Auto</span>
-                </div>
-            </div>
-            <div class="relative pt-4 pl-4 md:pt-0">
-                <div class="cursor-pointer hover:text-eureka" id="languageMode">
-                    <i class="fas fa-globe"></i>
-                    <span class="pl-1">中文</span>
-                </div>
-                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open-lang">
-                </div>
-                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
-                    id='languageOptions'>
-                    <a class="px-4 py-1 hover:text-eureka" href="/about/">中文</a>
-                    <a class="px-4 py-1 hover:text-eureka" href="/en/about/">English</a>
                 </div>
             </div>
         </div>
@@ -207,7 +196,6 @@
     document.addEventListener('DOMContentLoaded', () => {
         getcolorscheme();
         switchBurger();
-        switchLanguage()
     });
 
     let currenturl = document.getElementById('current-url').getAttribute('currenturl')
@@ -241,15 +229,15 @@
 <div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
     <div
         class="col-span-2 lg:col-start-2 lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
-        <h1 class="font-bold text-3xl text-primary-text">About</h1>
+        <h1 class="font-bold text-3xl text-primary-text">Hello World</h1>
         <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
     <div class="mr-6 my-2">
         <i class="fas fa-calendar mr-1"></i>
-        <span>2019-02-28</span>
+        <span>2020-12-13</span>
     </div>
     <div class="mr-6 my-2">
         <i class="fas fa-clock mr-1"></i>
-        <span>1分钟阅读时长</span>
+        <span>1 min read</span>
     </div>
     
     
@@ -259,19 +247,8 @@
         
         
         <div class="content">
-            <p>Written in Go, Hugo is an open source static site generator available under the <a href="https://github.com/gohugoio/hugo/blob/master/LICENSE">Apache Licence 2.0.</a> Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.</p>
-<p>Hugo makes use of a variety of open source projects including:</p>
-<ul>
-<li><a href="https://github.com/yuin/goldmark">https://github.com/yuin/goldmark</a></li>
-<li><a href="https://github.com/alecthomas/chroma">https://github.com/alecthomas/chroma</a></li>
-<li><a href="https://github.com/muesli/smartcrop">https://github.com/muesli/smartcrop</a></li>
-<li><a href="https://github.com/spf13/cobra">https://github.com/spf13/cobra</a></li>
-<li><a href="https://github.com/spf13/viper">https://github.com/spf13/viper</a></li>
-</ul>
-<p>Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.</p>
-<p>Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.</p>
-<p>Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.</p>
-<p>Learn more and contribute on <a href="https://github.com/gohugoio">GitHub</a>.</p>
+            <h1 id="hello-world">Hello World</h1>
+<p>This is my first post.</p>
 
         </div>
         
@@ -279,8 +256,48 @@
         
         
         
+        <div class="py-2">
+    
+    <div class="flex flex-col md:flex-row items-center my-8">
+        <a href="/en/authors/walle/" class="w-24 h-24 md:mr-4">
+            
+            
+            <img src="/en/authors/walle/avatar.jpg" class="w-full bg-primary-bg rounded-full" alt="Avatar">
+            
+        </a>
+        <div class="w-full md:w-auto mt-4 md:mt-0">
+            <a href="/en/authors/walle/" class="block font-bold text-lg pb-1 mb-2 border-b">Walle</a>
+            <span class="block pb-2">leave things better than you found them</span>
+            
+            
+            <a href="https://github.com/wallezen" class="mr-1">
+                <i class="fab fa-github"></i>
+            </a>
+            
+            
+            <a href="https://bytememo-1251943639.file.myqcloud.com/blog/20201213/006tNc79gy1g5mb8fmuavj30by0bymxx-134134.jpg" class="mr-1">
+                <i class="fab fa-weixin"></i>
+            </a>
+            
+        </div>
+    </div>
+    
+</div>
         
         
+        
+<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
+    <div>
+        
+    </div>
+    <div class="md:text-right mt-4 md:mt-0">
+        
+        <span class="block font-bold">Next</span>
+        <a href="/en/posts/math-support/" class="block">Math Support</a>
+        
+    </div>
+</div>
+
         
     </div>
     
