@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width">
 
 
-<title>ByteMemo</title>
+<title>Linux Tools | ByteMemo</title>
 <link rel="stylesheet" href="https://bytememo.com/css/eureka.min.css">
 <script defer src="https://bytememo.com/js/eureka.min.js"></script>
 
@@ -45,14 +45,43 @@
 <link rel="apple-touch-icon" sizes="180x180" href="https://bytememo.com/images/icon_hue5baedcac96101c4132c9be6c6d8d97f_7360_180x180_fill_box_center_2.png">
 
 <meta name="description"
-  content="ByteMemo"><meta property="og:title" content="ByteMemo" />
+  content="ByteMemo">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"Series",
+      "item":"https://bytememo.com/series/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"Linux Tools",
+      "item":"https://bytememo.com/series/linux-tools/"}]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "itemListElement":[{
+            "@type":"ListItem",
+            "position":  1 ,
+            "name": "DNS 配置与工具",
+            "description": "1. DNS 相关配置文件 linux 系统中和 DNS 相关的 配置文件 主要有两个： 1.1 /etc/hosts 设置 hostname 对应的 IP 地址 127.0.0.1 localhost 10.18.132.13 juputer.ied.com 1.2 /etc/resolv.conf 设置 DNS 服务器地址，以及解析规则等 search lol.qq.com qq.com com nameserver 8.8.8.8 options timeout: 1 options ndots: 3 sea",
+            "url": "https://bytememo.com/posts/dns-%E9%85%8D%E7%BD%AE%E4%B8%8E%E5%B7%A5%E5%85%B7/"
+        }
+    ]
+}
+</script><meta property="og:title" content="Linux Tools | ByteMemo" />
 <meta property="og:type" content="website" />
 
 
 <meta property="og:image" content="https://bytememo.com/images/icon.png">
 
 
-<meta property="og:url" content="https://bytememo.com/categories/" />
+<meta property="og:url" content="https://bytememo.com/series/linux-tools/" />
 
 
 
@@ -68,10 +97,6 @@
 
 
 
-<meta property="og:locale:alternate" content="en" />
-
-
-
 
 <meta property="og:site_name" content="ByteMemo" />
 
@@ -84,10 +109,10 @@
 
 
 
-<meta property="article:section" content="categories" />
+<meta property="article:section" content="series" />
 
 
-<link rel="alternate" type="application/rss+xml" href="https://bytememo.com/categories/index.xml" title="ByteMemo" />
+<link rel="alternate" type="application/rss+xml" href="https://bytememo.com/series/linux-tools/index.xml" title="ByteMemo" />
 
 <body class="flex flex-col min-h-screen">
     <header class="fixed flex items-center w-full min-h-16 pl-scrollbar z-50 bg-secondary-bg shadow-sm">
@@ -108,7 +133,7 @@
     <div id="target"
         class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
         <div class="text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0" id="current-url"
-            currenturl="https://bytememo.com/categories/">
+            currenturl="https://bytememo.com/series/linux-tools/">
             <a href="/"
                 class="block mt-4 md:inline-block md:mt-0 hover:text-eureka mr-4 main-a">首页</a>
             <a href="/posts/"
@@ -131,19 +156,6 @@
                     <span class="px-4 py-1 hover:text-eureka">Light</span>
                     <span class="px-4 py-1 hover:text-eureka">Dark</span>
                     <span class="px-4 py-1 hover:text-eureka">Auto</span>
-                </div>
-            </div>
-            <div class="relative pt-4 pl-4 md:pt-0">
-                <div class="cursor-pointer hover:text-eureka" id="languageMode">
-                    <i class="fas fa-globe"></i>
-                    <span class="pl-1">中文</span>
-                </div>
-                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open-lang">
-                </div>
-                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
-                    id='languageOptions'>
-                    <a class="px-4 py-1 hover:text-eureka" href="https://bytememo.com/categories/">中文</a>
-                    <a class="px-4 py-1 hover:text-eureka" href="https://bytememo.com/en/categories/">English</a>
                 </div>
             </div>
         </div>
@@ -172,7 +184,6 @@
     document.addEventListener('DOMContentLoaded', () => {
         getcolorscheme();
         switchBurger();
-        switchLanguage()
     });
 
     let currenturl = document.getElementById('current-url').getAttribute('currenturl')
@@ -202,20 +213,62 @@
         <div class="pl-scrollbar">
             <div class="w-full max-w-screen-xl lg:px-4 xl:px-8 mx-auto">
 <article class="mx-6 my-8">
-    <h1 class="font-bold text-3xl text-primary-text">Categories</h1>
+    <h1 class="font-bold text-3xl text-primary-text">Linux Tools</h1>
     
 </article>
-<div class="bg-secondary-bg rounded px-6 py-8">
+<div class="bg-secondary-bg rounded overflow-hidden px-4 divide-y">
     
-    <h2 class="text-lg text-primary-text my-2">
-        <a href="https://bytememo.com/categories/tools/" class="text-eureka hover:underline">Tools</a>
-    </h2>
+    <div class="px-2 py-6">
+        <div class="flex flex-col-reverse lg:flex-row justify-between">
+    <div class="w-full">
+        <div class="my-2">
+            <div class="mb-4">
+                <a href="https://bytememo.com/posts/dns-%E9%85%8D%E7%BD%AE%E4%B8%8E%E5%B7%A5%E5%85%B7/" class="font-bold text-xl hover:text-eureka">DNS 配置与工具</a>
+            </div>
+            <div class="content">
+                1. DNS 相关配置文件 linux 系统中和 DNS 相关的 配置文件 主要有两个： 1.1 /etc/hosts 设置 hostname 对应的 IP 地址 127.0.0.1 localhost 10.18.132.13 juputer.ied.com 1.2 /etc/resolv.conf 设置 DNS 服务器地址，以及解析规则等 search lol.qq.com qq.com com nameserver 8.8.8.8 options timeout: 1 options ndots: 3 sea
+            </div>
+        </div>
+        
+        <div class="flex flex-wrap flex-row items-center my-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>2020-12-20</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>2分钟阅读时长</span>
+    </div>
     
-    <h2 class="text-lg text-primary-text my-2">
-        <a href="https://bytememo.com/categories/%E7%A4%BA%E4%BE%8B/" class="text-eureka hover:underline">示例</a>
-    </h2>
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="https://bytememo.com/categories/tools/" class="hover:text-eureka">Tools</a>
+        
+    </div>
+    
+
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-th-list mr-1"></i>
+        
+        <a href="https://bytememo.com/series/linux-tools/" class="hover:text-eureka">Linux Tools</a>
+        
+    </div>
     
 </div>
+        
+    </div>
+    
+    
+</div>
+    </div>
+    
+</div>
+
+
+
 
             </div>
         </div>

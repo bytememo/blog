@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>&amp;copy; 2020 &lt;a href=&#34;https://bytememo.com/&#34;&gt;ByteMemo&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 20 Dec 2020 19:42:14 +0800</lastBuildDate><atom:link href="https://bytememo.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 21:51:24 +0800</lastBuildDate><atom:link href="https://bytememo.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DNS 配置与工具</title>
+      <link>https://bytememo.com/posts/dns-%E9%85%8D%E7%BD%AE%E4%B8%8E%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Sun, 20 Dec 2020 21:51:24 +0800</pubDate>
+      
+      <guid>https://bytememo.com/posts/dns-%E9%85%8D%E7%BD%AE%E4%B8%8E%E5%B7%A5%E5%85%B7/</guid>
+      <description>1. DNS 相关配置文件 linux 系统中和 DNS 相关的 配置文件 主要有两个： 1.1 /etc/hosts 设置 hostname 对应的 IP 地址 127.0.0.1 localhost 10.18.132.13 juputer.ied.com 1.2 /etc/resolv.conf 设置 DNS 服务器地址，以及解析规则等 search lol.qq.com qq.com com nameserver 8.8.8.8 options timeout: 1 options ndots: 3 sea</description>
+    </item>
+    
     <item>
       <title>中文示例 -【乡村教师】刘慈欣</title>
       <link>https://bytememo.com/posts/%E4%B8%AD%E6%96%87%E7%A4%BA%E4%BE%8B/</link>

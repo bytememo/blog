@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>&amp;copy; 2020 &lt;a href=&#34;https://bytememo.com/&#34;&gt;ByteMemo&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 20 Dec 2020 19:42:14 +0800</lastBuildDate><atom:link href="https://bytememo.com/authors/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 21:51:24 +0800</lastBuildDate><atom:link href="https://bytememo.com/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Walle</title>
+      <link>https://bytememo.com/authors/walle/</link>
+      <pubDate>Sun, 20 Dec 2020 21:51:24 +0800</pubDate>
+      
+      <guid>https://bytememo.com/authors/walle/</guid>
+      <description>Self Introduction Nothing yet&amp;hellip;
+Details Nothing yet&amp;hellip;</description>
+    </item>
+    
     <item>
       <title>hugo-authors</title>
       <link>https://bytememo.com/authors/hugo-authors/</link>
@@ -15,16 +25,6 @@
       
       <guid>https://bytememo.com/authors/hugo-authors/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Walle</title>
-      <link>https://bytememo.com/authors/walle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bytememo.com/authors/walle/</guid>
-      <description>Self Introduction Nothing yet&amp;hellip;
-Details Nothing yet&amp;hellip;</description>
     </item>
     
   </channel>
