@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on ByteMemo</title>
-    <link>https://bytememo.com/posts/</link>
-    <description>Recent content in Posts on ByteMemo</description>
+    <title>示例 on ByteMemo</title>
+    <link>https://bytememo.com/tags/%E7%A4%BA%E4%BE%8B/</link>
+    <description>Recent content in 示例 on ByteMemo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
     <copyright>&amp;copy; 2020 &lt;a href=&#34;https://bytememo.com/&#34;&gt;ByteMemo&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 20 Dec 2020 19:42:14 +0800</lastBuildDate><atom:link href="https://bytememo.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 19:42:14 +0800</lastBuildDate><atom:link href="https://bytememo.com/tags/%E7%A4%BA%E4%BE%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>中文示例 -【乡村教师】刘慈欣</title>
       <link>https://bytememo.com/posts/%E4%B8%AD%E6%96%87%E7%A4%BA%E4%BE%8B/</link>
