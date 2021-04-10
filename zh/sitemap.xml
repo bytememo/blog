@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://bytememo.com/authors/</loc>
     <lastmod>2020-12-20T21:51:24+08:00</lastmod>
@@ -15,9 +14,7 @@
                 hreflang="zh"
                 href="https://bytememo.com/authors/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bytememo.com/</loc>
     <lastmod>2020-12-20T21:51:24+08:00</lastmod>
     <xhtml:link
@@ -30,9 +27,7 @@
                 hreflang="zh"
                 href="https://bytememo.com/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bytememo.com/categories/</loc>
     <lastmod>2020-12-20T21:51:24+08:00</lastmod>
     <xhtml:link
@@ -45,29 +40,19 @@
                 hreflang="zh"
                 href="https://bytememo.com/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bytememo.com/tags/dns/</loc>
     <lastmod>2020-12-20T21:51:24+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bytememo.com/posts/dns-%E9%85%8D%E7%BD%AE%E4%B8%8E%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2020-12-20T21:51:24+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bytememo.com/tags/linux/</loc>
     <lastmod>2020-12-20T21:51:24+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bytememo.com/series/linux-tools/</loc>
     <lastmod>2020-12-20T21:51:24+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bytememo.com/posts/</loc>
     <lastmod>2020-12-20T21:51:24+08:00</lastmod>
     <xhtml:link
@@ -80,9 +65,7 @@
                 hreflang="zh"
                 href="https://bytememo.com/posts/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bytememo.com/series/</loc>
     <lastmod>2020-12-20T21:51:24+08:00</lastmod>
     <xhtml:link
@@ -95,9 +78,7 @@
                 hreflang="zh"
                 href="https://bytememo.com/series/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bytememo.com/tags/</loc>
     <lastmod>2020-12-20T21:51:24+08:00</lastmod>
     <xhtml:link
@@ -110,14 +91,10 @@
                 hreflang="zh"
                 href="https://bytememo.com/tags/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bytememo.com/categories/tools/</loc>
     <lastmod>2020-12-20T21:51:24+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bytememo.com/authors/walle/</loc>
     <lastmod>2020-12-20T21:51:24+08:00</lastmod>
     <xhtml:link
@@ -130,9 +107,7 @@
                 hreflang="zh"
                 href="https://bytememo.com/authors/walle/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bytememo.com/authors/hugo-authors/</loc>
     <lastmod>2020-12-20T19:42:14+08:00</lastmod>
     <xhtml:link
@@ -145,24 +120,16 @@
                 hreflang="zh"
                 href="https://bytememo.com/authors/hugo-authors/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bytememo.com/posts/%E4%B8%AD%E6%96%87%E7%A4%BA%E4%BE%8B/</loc>
     <lastmod>2020-12-20T19:42:14+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bytememo.com/tags/%E7%A4%BA%E4%BE%8B/</loc>
     <lastmod>2020-12-20T19:42:14+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bytememo.com/categories/%E7%A4%BA%E4%BE%8B/</loc>
     <lastmod>2020-12-20T19:42:14+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bytememo.com/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -175,9 +142,7 @@
                 hreflang="zh"
                 href="https://bytememo.com/about/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bytememo.com/docs/</loc>
     <xhtml:link
                 rel="alternate"
@@ -190,5 +155,4 @@
                 href="https://bytememo.com/docs/"
                 />
   </url>
-  
 </urlset>
