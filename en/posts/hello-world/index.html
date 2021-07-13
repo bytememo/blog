@@ -5,7 +5,7 @@
 
 <title>Hello World | ByteMemo</title>
 
-<meta name="generator" content="Hugo Eureka 0.8.0" />
+<meta name="generator" content="Hugo Eureka 0.8.2" />
 <link rel="stylesheet" href="https://bytememo.com/css/eureka.min.css">
 <script defer src="https://bytememo.com/js/eureka.min.js"></script>
 
@@ -14,7 +14,7 @@
   href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
   as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/atom-one-dark.min.css"
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/atom-one-light.min.css"
    media="print"
   onload="this.media='all';this.onload=null" crossorigin>
 <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"
@@ -147,7 +147,7 @@
     },
     "headline": "Hello World | ByteMemo","datePublished": "2020-12-13T14:23:07+08:00",
     "dateModified": "2020-10-20T10:30:48+08:00",
-    "wordCount":  97 ,
+    "wordCount":  122 ,
     "author": {
         "@type": "Person",
         "name": ["walle"]
@@ -303,6 +303,7 @@
             <h2 id="text-demo">Text Demo</h2>
 <p>This is my first post.</p>
 <h2 id="code-demo">Code Demo</h2>
+<h3 id="go">go</h3>
 <pre><code class="language-go">package main
 
 import (
@@ -343,6 +344,15 @@ func main() {
     fmt.Println(&quot;&gt; ls -a -l -h&quot;)
     fmt.Println(string(lsOut))
 }
+</code></pre>
+<h3 id="python">python</h3>
+<pre><code>import matplotlib.pyplot as plt
+
+price = [2.50, 1.23, 4.02, 3.25, 5.00, 4.40]
+sales_per_day = [34, 62, 49, 22, 13, 19]
+
+plt.scatter(price, sales_per_day)
+plt.show()
 </code></pre>
 <h2 id="video-demo">Video Demo</h2>
 <h3 id="youtube">youtube</h3>
@@ -425,7 +435,12 @@ func main() {
     <nav id="TableOfContents">
   <ul>
     <li><a href="#text-demo">Text Demo</a></li>
-    <li><a href="#code-demo">Code Demo</a></li>
+    <li><a href="#code-demo">Code Demo</a>
+      <ul>
+        <li><a href="#go">go</a></li>
+        <li><a href="#python">python</a></li>
+      </ul>
+    </li>
     <li><a href="#video-demo">Video Demo</a>
       <ul>
         <li><a href="#youtube">youtube</a></li>
