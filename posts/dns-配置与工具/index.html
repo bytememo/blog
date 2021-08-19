@@ -349,8 +349,8 @@ options ndots: 3
 <p><code>search</code>选项 和 <code>options ndots</code> 选项配合指示是否要在用户传入的域名后添加后缀，具体规则如下：</p>
 <ol>
 <li>如果用户传入的域名是<code>绝对域名</code>，即域名以<code>.</code>结尾（如上<code>www.baidu.</code>），则查询的仅是该域名。</li>
-<li>如果传入的是<code>相对域名</code>，且该域名中包含的<code>.</code>的数目大于或等于<code>option ndots:${n}</code>命令指定的数，则查询的仅是该域名。</li>
-<li>如果传入的是<code>相对域名</code>，且传入的域名包含的<code>.</code>的数目少于<code>option ndots:${n}</code>命令指定的数，则解析时会依次往传入的域名后追加<code>search</code>列表中的后缀，直到解析出ip地址，或者解析完列表中所有后缀才会停止。</li>
+<li>如果传入的是<code>相对域名</code>， 且该域名中包含的<code>.</code>的数目大于或等于<code>option ndots:${n}</code>命令指定的数，则查询的仅是该域名。</li>
+<li>如果传入的是<code>相对域名</code>， 且传入的域名包含的<code>.</code>的数目少于<code>option ndots:${n}</code>命令指定的数，则解析时会依次往传入的域名后追加<code>search</code>列表中的后缀，直到解析出ip地址，或者解析完列表中所有后缀才会停止。</li>
 </ol>
 <h2 id="2-dns-相关命令行工具">2. DNS 相关命令行工具</h2>
 <p>和 DNS 相关的命令行工具主要有四个： <code>nslookup</code>, <code>host</code>, <code>dig</code>,<code>nscd</code>。</p>
