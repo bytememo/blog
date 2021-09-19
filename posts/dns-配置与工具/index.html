@@ -334,19 +334,17 @@
 <blockquote>
 <p>设置 hostname 对应的 IP 地址</p>
 </blockquote>
-<pre><code class="language-conf">127.0.0.1 localhost
+<pre><code class="language-conf" data-lang="conf">127.0.0.1 localhost
 10.18.132.13 juputer.ied.com
-</code></pre>
-<h3 id="12-etcresolvconf">1.2 <code>/etc/resolv.conf</code></h3>
+</code></pre><h3 id="12-etcresolvconf">1.2 <code>/etc/resolv.conf</code></h3>
 <blockquote>
 <p>设置 DNS 服务器地址，以及解析规则等</p>
 </blockquote>
-<pre><code class="language-conf">search lol.qq.com qq.com com
+<pre><code class="language-conf" data-lang="conf">search lol.qq.com qq.com com
 nameserver 8.8.8.8
 options timeout: 1
 options ndots: 3
-</code></pre>
-<p><code>search</code>选项 和 <code>options ndots</code> 选项配合指示是否要在用户传入的域名后添加后缀，具体规则如下：</p>
+</code></pre><p><code>search</code>选项 和 <code>options ndots</code> 选项配合指示是否要在用户传入的域名后添加后缀，具体规则如下：</p>
 <ol>
 <li>如果用户传入的域名是<code>绝对域名</code>，即域名以<code>.</code>结尾（如上<code>www.baidu.</code>），则查询的仅是该域名。</li>
 <li>如果传入的是<code>相对域名</code>， 且该域名中包含的<code>.</code>的数目大于或等于<code>option ndots:${n}</code>命令指定的数，则查询的仅是该域名。</li>
@@ -358,61 +356,57 @@ options ndots: 3
 <blockquote>
 <p>解析域名IP地址</p>
 </blockquote>
-<pre><code class="language-shell">➜  ~ nslookup wallez.cn [10.20.250.17]
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">➜  ~ nslookup wallez.cn <span class="o">[</span>10.20.250.17<span class="o">]</span>
 Server:		10.20.250.17
 Address:	10.20.250.17#53
 
 Non-authoritative answer:
-wallez.cn	canonical name = walle.github.io.
-walle.github.io	canonical name = sni.github.map.fastly.net.
+wallez.cn	canonical <span class="nv">name</span> <span class="o">=</span> walle.github.io.
+walle.github.io	canonical <span class="nv">name</span> <span class="o">=</span> sni.github.map.fastly.net.
 Name:	sni.github.map.fastly.net
 Address: 151.101.25.147
-</code></pre>
-<h3 id="22-host">2.2 host</h3>
+</code></pre></div><h3 id="22-host">2.2 host</h3>
 <blockquote>
 <p>查看域名主机信息</p>
 </blockquote>
-<pre><code class="language-shell">➜  ~ host [-a] wallez.cn
-wallez.cn is an alias for walle.github.io.
-walle.github.io is an alias for sni.github.map.fastly.net.
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">➜  ~ host <span class="o">[</span>-a<span class="o">]</span> wallez.cn
+wallez.cn is an <span class="nb">alias</span> <span class="k">for</span> walle.github.io.
+walle.github.io is an <span class="nb">alias</span> <span class="k">for</span> sni.github.map.fastly.net.
 sni.github.map.fastly.net has address 151.101.25.147
 sni.github.map.fastly.net has IPv6 address 2a04:4e42:11::403
-</code></pre>
-<h3 id="23-dig">2.3 dig</h3>
+</code></pre></div><h3 id="23-dig">2.3 dig</h3>
 <blockquote>
 <p>跟踪域名解析过程</p>
 </blockquote>
-<pre><code class="language-shell">➜  ~ dig [+trace] wallez.cn
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">➜  ~ dig <span class="o">[</span>+trace<span class="o">]</span> wallez.cn
 
-; &lt;&lt;&gt;&gt; DiG 9.9.7-P3 &lt;&lt;&gt;&gt; wallez.cn
-;; global options: +cmd
-;; Got answer:
-;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 46034
-;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+<span class="p">;</span> &lt;&lt;&gt;&gt; DiG 9.9.7-P3 &lt;&lt;&gt;&gt; wallez.cn
+<span class="p">;;</span> global options: +cmd
+<span class="p">;;</span> Got answer:
+<span class="p">;;</span> -&gt;&gt;HEADER<span class="s">&lt;&lt;- opco</span>de: QUERY, status: NOERROR, id: <span class="m">46034</span>
+<span class="p">;;</span> flags: qr rd ra<span class="p">;</span> QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: <span class="m">1</span>
 
-;; OPT PSEUDOSECTION:
-; EDNS: version: 0, flags:; udp: 4000
-;; QUESTION SECTION:
-;wallez.cn.			IN	A
+<span class="p">;;</span> OPT PSEUDOSECTION:
+<span class="p">;</span> EDNS: version: 0, flags:<span class="p">;</span> udp: <span class="m">4000</span>
+<span class="p">;;</span> QUESTION SECTION:
+<span class="p">;</span>wallez.cn.			IN	A
 
-;; ANSWER SECTION:
+<span class="p">;;</span> ANSWER SECTION:
 wallez.cn.		657	IN	CNAME	walle.github.io.
 walle.github.io.	2418	IN	CNAME	sni.github.map.fastly.net.
 sni.github.map.fastly.net. 436	IN	A	151.101.73.147
 
-;; Query time: 61 msec
-;; SERVER: 10.20.250.17#53(10.20.250.17)
-;; WHEN: Sat Oct 14 13:41:04 CST 2017
-;; MSG SIZE  rcvd: 122
-</code></pre>
-<h3 id="24-nscd">2.4 nscd</h3>
+<span class="p">;;</span> Query time: <span class="m">61</span> msec
+<span class="p">;;</span> SERVER: 10.20.250.17#53<span class="o">(</span>10.20.250.17<span class="o">)</span>
+<span class="p">;;</span> WHEN: Sat Oct <span class="m">14</span> 13:41:04 CST <span class="m">2017</span>
+<span class="p">;;</span> MSG SIZE  rcvd: <span class="m">122</span>
+</code></pre></div><h3 id="24-nscd">2.4 nscd</h3>
 <blockquote>
 <p>DNS 本地缓存服务
 安装 <code>nscd</code> 后，设置 <code>/etc/nscd.conf</code>文件以开启 DNS 缓存：</p>
 </blockquote>
-<pre><code class="language-conf">enable-cache    hosts       yes
-</code></pre>
-<p><code>nscd</code>的常用选项：</p>
+<pre><code class="language-conf" data-lang="conf">enable-cache    hosts       yes
+</code></pre><p><code>nscd</code>的常用选项：</p>
 <ul>
 <li><code>-g</code>: 显示缓存统计信息</li>
 <li><code>-f</code>: 指定配置文件</li>

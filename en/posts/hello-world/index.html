@@ -310,57 +310,55 @@
 <p>alone: $$\sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}$$</p>
 <h2 id="code-demo">Code Demo</h2>
 <h3 id="go">go</h3>
-<pre><code class="language-go">package main
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kn">package</span> <span class="nx">main</span>
 
-import (
-    &quot;fmt&quot;
-    &quot;io/ioutil&quot;
-    &quot;os/exec&quot;
-)
+<span class="kn">import</span> <span class="p">(</span>
+    <span class="s">&#34;fmt&#34;</span>
+    <span class="s">&#34;io/ioutil&#34;</span>
+    <span class="s">&#34;os/exec&#34;</span>
+<span class="p">)</span>
+<span class="hl">
+</span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 
-func main() {
+    <span class="nx">dateCmd</span> <span class="o">:=</span> <span class="nx">exec</span><span class="p">.</span><span class="nf">Command</span><span class="p">(</span><span class="s">&#34;date&#34;</span><span class="p">)</span>
 
-    dateCmd := exec.Command(&quot;date&quot;)
+    <span class="nx">dateOut</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">dateCmd</span><span class="p">.</span><span class="nf">Output</span><span class="p">()</span>
+    <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+        <span class="nb">panic</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;&gt; date&#34;</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nb">string</span><span class="p">(</span><span class="nx">dateOut</span><span class="p">))</span>
 
-    dateOut, err := dateCmd.Output()
-    if err != nil {
-        panic(err)
-    }
-    fmt.Println(&quot;&gt; date&quot;)
-    fmt.Println(string(dateOut))
+    <span class="nx">grepCmd</span> <span class="o">:=</span> <span class="nx">exec</span><span class="p">.</span><span class="nf">Command</span><span class="p">(</span><span class="s">&#34;grep&#34;</span><span class="p">,</span> <span class="s">&#34;hello&#34;</span><span class="p">)</span>
 
-    grepCmd := exec.Command(&quot;grep&quot;, &quot;hello&quot;)
+    <span class="nx">grepIn</span><span class="p">,</span> <span class="nx">_</span> <span class="o">:=</span> <span class="nx">grepCmd</span><span class="p">.</span><span class="nf">StdinPipe</span><span class="p">()</span>
+    <span class="nx">grepOut</span><span class="p">,</span> <span class="nx">_</span> <span class="o">:=</span> <span class="nx">grepCmd</span><span class="p">.</span><span class="nf">StdoutPipe</span><span class="p">()</span>
+    <span class="nx">grepCmd</span><span class="p">.</span><span class="nf">Start</span><span class="p">()</span>
+    <span class="nx">grepIn</span><span class="p">.</span><span class="nf">Write</span><span class="p">([]</span><span class="nb">byte</span><span class="p">(</span><span class="s">&#34;hello grep\ngoodbye grep&#34;</span><span class="p">))</span>
+    <span class="nx">grepIn</span><span class="p">.</span><span class="nf">Close</span><span class="p">()</span>
+    <span class="nx">grepBytes</span><span class="p">,</span> <span class="nx">_</span> <span class="o">:=</span> <span class="nx">ioutil</span><span class="p">.</span><span class="nf">ReadAll</span><span class="p">(</span><span class="nx">grepOut</span><span class="p">)</span>
+    <span class="nx">grepCmd</span><span class="p">.</span><span class="nf">Wait</span><span class="p">()</span>
 
-    grepIn, _ := grepCmd.StdinPipe()
-    grepOut, _ := grepCmd.StdoutPipe()
-    grepCmd.Start()
-    grepIn.Write([]byte(&quot;hello grep\ngoodbye grep&quot;))
-    grepIn.Close()
-    grepBytes, _ := ioutil.ReadAll(grepOut)
-    grepCmd.Wait()
+    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;&gt; grep hello&#34;</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nb">string</span><span class="p">(</span><span class="nx">grepBytes</span><span class="p">))</span>
 
-    fmt.Println(&quot;&gt; grep hello&quot;)
-    fmt.Println(string(grepBytes))
+    <span class="nx">lsCmd</span> <span class="o">:=</span> <span class="nx">exec</span><span class="p">.</span><span class="nf">Command</span><span class="p">(</span><span class="s">&#34;bash&#34;</span><span class="p">,</span> <span class="s">&#34;-c&#34;</span><span class="p">,</span> <span class="s">&#34;ls -a -l -h&#34;</span><span class="p">)</span>
+    <span class="nx">lsOut</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">lsCmd</span><span class="p">.</span><span class="nf">Output</span><span class="p">()</span>
+    <span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+        <span class="nb">panic</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;&gt; ls -a -l -h&#34;</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nb">string</span><span class="p">(</span><span class="nx">lsOut</span><span class="p">))</span>
+<span class="p">}</span>
+</code></pre></div><h3 id="python">python</h3>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 
-    lsCmd := exec.Command(&quot;bash&quot;, &quot;-c&quot;, &quot;ls -a -l -h&quot;)
-    lsOut, err := lsCmd.Output()
-    if err != nil {
-        panic(err)
-    }
-    fmt.Println(&quot;&gt; ls -a -l -h&quot;)
-    fmt.Println(string(lsOut))
-}
-</code></pre>
-<h3 id="python">python</h3>
-<pre><code>import matplotlib.pyplot as plt
+<span class="hl"><span class="n">price</span> <span class="o">=</span> <span class="p">[</span><span class="mf">2.50</span><span class="p">,</span> <span class="mf">1.23</span><span class="p">,</span> <span class="mf">4.02</span><span class="p">,</span> <span class="mf">3.25</span><span class="p">,</span> <span class="mf">5.00</span><span class="p">,</span> <span class="mf">4.40</span><span class="p">]</span>
+</span><span class="n">sales_per_day</span> <span class="o">=</span> <span class="p">[</span><span class="mi">34</span><span class="p">,</span> <span class="mi">62</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">19</span><span class="p">]</span>
 
-price = [2.50, 1.23, 4.02, 3.25, 5.00, 4.40]
-sales_per_day = [34, 62, 49, 22, 13, 19]
-
-plt.scatter(price, sales_per_day)
-plt.show()
-</code></pre>
-<h2 id="video-demo">Video Demo</h2>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">price</span><span class="p">,</span> <span class="n">sales_per_day</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div><h2 id="video-demo">Video Demo</h2>
 <h3 id="youtube">youtube</h3>
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/7EmboKQH8lM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <h3 id="bilibili">bilibili</h3>
