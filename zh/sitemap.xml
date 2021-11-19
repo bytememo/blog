@@ -154,5 +154,7 @@
                 hreflang="zh"
                 href="https://bytememo.com/docs/"
                 />
+  </url><url>
+    <loc>https://bytememo.com/newsletter/</loc>
   </url>
 </urlset>
