@@ -114,8 +114,8 @@
   integrity="sha256-Zmpaaj&#43;GXFsPF5WdPArSrnW3b30dovldeKsW00xBVwE="  crossorigin></script>
 
 
-<link rel="icon" type="image/png" sizes="32x32" href="https://bytememo.com/images/icon_hue5baedcac96101c4132c9be6c6d8d97f_7360_32x32_fill_box_center_2.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://bytememo.com/images/icon_hue5baedcac96101c4132c9be6c6d8d97f_7360_180x180_fill_box_center_2.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bytememo.com/images/icon_hue5baedcac96101c4132c9be6c6d8d97f_7360_32x32_fill_box_center_3.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://bytememo.com/images/icon_hue5baedcac96101c4132c9be6c6d8d97f_7360_180x180_fill_box_center_3.png">
 
 <meta name="description"
   content="1. DNS 相关配置文件 linux 系统中和 DNS 相关的 配置文件 主要有两个： 1.1 /etc/hosts 设置 hostname 对应的 IP 地址 127.0.0.1 localhost 10.18.132.13 juputer.ied.com 1.2 /etc/resolv.conf 设置 DNS 服务器地址，以及解析规则等 search lol.qq.com qq.com com nameserver 8.8.8.8 options timeout: 1 options ndots: 3 sea">
@@ -335,13 +335,13 @@
 <blockquote>
 <p>设置 hostname 对应的 IP 地址</p>
 </blockquote>
-<pre><code class="language-conf" data-lang="conf">127.0.0.1 localhost
+<pre tabindex="0"><code class="language-conf" data-lang="conf">127.0.0.1 localhost
 10.18.132.13 juputer.ied.com
 </code></pre><h3 id="12-etcresolvconf">1.2 <code>/etc/resolv.conf</code></h3>
 <blockquote>
 <p>设置 DNS 服务器地址，以及解析规则等</p>
 </blockquote>
-<pre><code class="language-conf" data-lang="conf">search lol.qq.com qq.com com
+<pre tabindex="0"><code class="language-conf" data-lang="conf">search lol.qq.com qq.com com
 nameserver 8.8.8.8
 options timeout: 1
 options ndots: 3
@@ -357,56 +357,56 @@ options ndots: 3
 <blockquote>
 <p>解析域名IP地址</p>
 </blockquote>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">➜  ~ nslookup wallez.cn <span class="o">[</span>10.20.250.17<span class="o">]</span>
-Server:		10.20.250.17
-Address:	10.20.250.17#53
-
-Non-authoritative answer:
-wallez.cn	canonical <span class="nv">name</span> <span class="o">=</span> walle.github.io.
-walle.github.io	canonical <span class="nv">name</span> <span class="o">=</span> sni.github.map.fastly.net.
-Name:	sni.github.map.fastly.net
-Address: 151.101.25.147
-</code></pre></div><h3 id="22-host">2.2 host</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">➜  ~ nslookup wallez.cn <span class="o">[</span>10.20.250.17<span class="o">]</span>
+</span></span><span class="line"><span class="cl">Server:		10.20.250.17
+</span></span><span class="line"><span class="cl">Address:	10.20.250.17#53
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Non-authoritative answer:
+</span></span><span class="line"><span class="cl">wallez.cn	canonical <span class="nv">name</span> <span class="o">=</span> walle.github.io.
+</span></span><span class="line"><span class="cl">walle.github.io	canonical <span class="nv">name</span> <span class="o">=</span> sni.github.map.fastly.net.
+</span></span><span class="line"><span class="cl">Name:	sni.github.map.fastly.net
+</span></span><span class="line"><span class="cl">Address: 151.101.25.147
+</span></span></code></pre></div><h3 id="22-host">2.2 host</h3>
 <blockquote>
 <p>查看域名主机信息</p>
 </blockquote>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">➜  ~ host <span class="o">[</span>-a<span class="o">]</span> wallez.cn
-wallez.cn is an <span class="nb">alias</span> <span class="k">for</span> walle.github.io.
-walle.github.io is an <span class="nb">alias</span> <span class="k">for</span> sni.github.map.fastly.net.
-sni.github.map.fastly.net has address 151.101.25.147
-sni.github.map.fastly.net has IPv6 address 2a04:4e42:11::403
-</code></pre></div><h3 id="23-dig">2.3 dig</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">➜  ~ host <span class="o">[</span>-a<span class="o">]</span> wallez.cn
+</span></span><span class="line"><span class="cl">wallez.cn is an <span class="nb">alias</span> <span class="k">for</span> walle.github.io.
+</span></span><span class="line"><span class="cl">walle.github.io is an <span class="nb">alias</span> <span class="k">for</span> sni.github.map.fastly.net.
+</span></span><span class="line"><span class="cl">sni.github.map.fastly.net has address 151.101.25.147
+</span></span><span class="line"><span class="cl">sni.github.map.fastly.net has IPv6 address 2a04:4e42:11::403
+</span></span></code></pre></div><h3 id="23-dig">2.3 dig</h3>
 <blockquote>
 <p>跟踪域名解析过程</p>
 </blockquote>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">➜  ~ dig <span class="o">[</span>+trace<span class="o">]</span> wallez.cn
-
-<span class="p">;</span> &lt;&lt;&gt;&gt; DiG 9.9.7-P3 &lt;&lt;&gt;&gt; wallez.cn
-<span class="p">;;</span> global options: +cmd
-<span class="p">;;</span> Got answer:
-<span class="p">;;</span> -&gt;&gt;HEADER<span class="s">&lt;&lt;- opco</span>de: QUERY, status: NOERROR, id: <span class="m">46034</span>
-<span class="p">;;</span> flags: qr rd ra<span class="p">;</span> QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: <span class="m">1</span>
-
-<span class="p">;;</span> OPT PSEUDOSECTION:
-<span class="p">;</span> EDNS: version: 0, flags:<span class="p">;</span> udp: <span class="m">4000</span>
-<span class="p">;;</span> QUESTION SECTION:
-<span class="p">;</span>wallez.cn.			IN	A
-
-<span class="p">;;</span> ANSWER SECTION:
-wallez.cn.		657	IN	CNAME	walle.github.io.
-walle.github.io.	2418	IN	CNAME	sni.github.map.fastly.net.
-sni.github.map.fastly.net. 436	IN	A	151.101.73.147
-
-<span class="p">;;</span> Query time: <span class="m">61</span> msec
-<span class="p">;;</span> SERVER: 10.20.250.17#53<span class="o">(</span>10.20.250.17<span class="o">)</span>
-<span class="p">;;</span> WHEN: Sat Oct <span class="m">14</span> 13:41:04 CST <span class="m">2017</span>
-<span class="p">;;</span> MSG SIZE  rcvd: <span class="m">122</span>
-</code></pre></div><h3 id="24-nscd">2.4 nscd</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">➜  ~ dig <span class="o">[</span>+trace<span class="o">]</span> wallez.cn
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">;</span> &lt;&lt;&gt;&gt; DiG 9.9.7-P3 &lt;&lt;&gt;&gt; wallez.cn
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> global options: +cmd
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> Got answer:
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> -&gt;&gt;HEADER<span class="s">&lt;&lt;- opco</span>de: QUERY, status: NOERROR, id: <span class="m">46034</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> flags: qr rd ra<span class="p">;</span> QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: <span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> OPT PSEUDOSECTION:
+</span></span><span class="line"><span class="cl"><span class="p">;</span> EDNS: version: 0, flags:<span class="p">;</span> udp: <span class="m">4000</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> QUESTION SECTION:
+</span></span><span class="line"><span class="cl"><span class="p">;</span>wallez.cn.			IN	A
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> ANSWER SECTION:
+</span></span><span class="line"><span class="cl">wallez.cn.		657	IN	CNAME	walle.github.io.
+</span></span><span class="line"><span class="cl">walle.github.io.	2418	IN	CNAME	sni.github.map.fastly.net.
+</span></span><span class="line"><span class="cl">sni.github.map.fastly.net. 436	IN	A	151.101.73.147
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> Query time: <span class="m">61</span> msec
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> SERVER: 10.20.250.17#53<span class="o">(</span>10.20.250.17<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> WHEN: Sat Oct <span class="m">14</span> 13:41:04 CST <span class="m">2017</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span> MSG SIZE  rcvd: <span class="m">122</span>
+</span></span></code></pre></div><h3 id="24-nscd">2.4 nscd</h3>
 <blockquote>
 <p>DNS 本地缓存服务
 安装 <code>nscd</code> 后，设置 <code>/etc/nscd.conf</code>文件以开启 DNS 缓存：</p>
 </blockquote>
-<pre><code class="language-conf" data-lang="conf">enable-cache    hosts       yes
+<pre tabindex="0"><code class="language-conf" data-lang="conf">enable-cache    hosts       yes
 </code></pre><p><code>nscd</code>的常用选项：</p>
 <ul>
 <li><code>-g</code>: 显示缓存统计信息</li>
