@@ -135,7 +135,21 @@ Details Nothing yet&hellip;">
 
 
 
-<meta property="og:title" content="wallezen | ByteMemo" />
+
+<script type="application/ld+json">
+{
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "itemListElement":[{
+            "@type":"ListItem",
+            "position":  1 ,
+            "name": "DNS 配置与工具",
+            "description": "1. DNS 相关配置文件 linux 系统中和 DNS 相关的 配置文件 主要有两个： 1.1 /etc/hosts 设置 hostname 对应的 IP 地址 127.0.0.1 localhost 10.18.132.13 juputer.ied.com 1.2 /etc/resolv.conf 设置 DNS 服务器地址，以及解析规则等 search lol.qq.com qq.com com nameserver 8.8.8.8 options timeout: 1 options ndots: 3 sea",
+            "url": "https://bytememo.com/posts/dns-%E9%85%8D%E7%BD%AE%E4%B8%8E%E5%B7%A5%E5%85%B7/"
+        }
+    ]
+}
+</script><meta property="og:title" content="wallezen | ByteMemo" />
 <meta property="og:type" content="website" />
 
 
@@ -158,6 +172,10 @@ Details Nothing yet&hellip;">
 
 
 
+<meta property="og:locale:alternate" content="en" />
+
+
+
 
 <meta property="og:site_name" content="ByteMemo" />
 
@@ -165,6 +183,8 @@ Details Nothing yet&hellip;">
 
 
 
+
+<meta property="og:updated_time" content="2020-12-20T21:51:24&#43;08:00" />
 
 
 
@@ -196,7 +216,7 @@ Details Nothing yet&hellip;">
             <a href="/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">首页</a>
             <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">文章</a>
             <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">文档</a>
-            <a href="/authors/walle/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">关于</a>
+            <a href="/authors/wallezen/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  me-4">关于</a>
             <a href="/index.xml" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">RSS</a>
             <a href="https://lessmore.zhubai.love/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  me-4">订阅</a>
         </div>
@@ -213,6 +233,19 @@ Details Nothing yet&hellip;">
                     <span class="px-4 py-1 hover:text-eureka" name="Light">浅色</span>
                     <span class="px-4 py-1 hover:text-eureka" name="Dark">深色</span>
                     <span class="px-4 py-1 hover:text-eureka" name="Auto">自动</span>
+                </div>
+            </div>
+            <div class="relative pt-4 ps-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="languageMode">
+                    <i class="fas fa-globe"></i>
+                    <span class="ps-1">中文</span>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open-lang">
+                </div>
+                <div class="absolute flex flex-col start-0 md:start-auto end-auto md:end-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='languageOptions'>
+                    <a class="px-4 py-1 hover:text-eureka" href="https://bytememo.com/authors/wallezen/">中文</a>
+                    <a class="px-4 py-1 hover:text-eureka" href="https://bytememo.com/en/authors/wallezen/">English</a>
                 </div>
             </div>
         </div>
@@ -242,6 +275,7 @@ Details Nothing yet&hellip;">
     document.addEventListener('DOMContentLoaded', () => {
         getcolorscheme();
         switchBurger();
+        switchLanguage()
     });
 </script>
 </div>
@@ -329,6 +363,65 @@ Details Nothing yet&hellip;">
     <div class="mx-auto max-w-screen-xl">
       <div class="mx-auto px-6 py-12 md:px-8 lg:w-3/4 xl:px-12">
         <div class="overflow-hidden divide-y">
+  
+  <div class="py-6">
+    <div class="flex flex-col-reverse lg:flex-row justify-between">
+  
+  <div class="w-full ">
+    <div class="prose">
+  <a href="https://bytememo.com/posts/dns-%E9%85%8D%E7%BD%AE%E4%B8%8E%E5%B7%A5%E5%85%B7/" class="no-underline">
+    <h3 class="mt-0">DNS 配置与工具</h3>
+  </a>
+  
+    1. DNS 相关配置文件 linux 系统中和 DNS 相关的 配置文件 主要有两个： 1.1 /etc/hosts 设置 hostname 对应的 IP 地址 127.0.0.1 localhost 10.18.132.13 juputer.ied.com 1.2 /etc/resolv.conf 设置 DNS 服务器地址，以及解析规则等 search lol.qq.com qq.com com nameserver 8.8.8.8 options timeout: 1 options ndots: 3 sea
+  
+
+  
+    <div
+  class="text-tertiary-text not-prose mt-2 flex flex-row flex-wrap items-center"
+>
+  <div class="me-6 my-2">
+    <i class="fas fa-calendar me-1"></i>
+    <span
+      >2020-12-20</span
+    >
+  </div>
+  <div class="me-6 my-2">
+    <i class="fas fa-clock me-1"></i>
+    <span>2分钟阅读时长</span>
+  </div>
+
+  
+    <div class="me-6 my-2">
+      <i class="fas fa-folder me-1"></i>
+      
+        <a href="https://bytememo.com/categories/tools/" class="hover:text-eureka"
+          >Tools</a
+        >
+      
+    </div>
+  
+
+  
+    <div class="me-6 my-2">
+      <i class="fas fa-th-list me-1"></i>
+      
+        <a href="https://bytememo.com/series/linux-tools/" class="hover:text-eureka"
+          >Linux Tools</a
+        >
+      
+    </div>
+  
+</div>
+
+  
+</div>
+
+  </div>
+
+  
+</div>
+  </div>
   
 </div>
 

@@ -95,17 +95,17 @@
     <loc>https://bytememo.com/categories/tools/</loc>
     <lastmod>2020-12-20T21:51:24+08:00</lastmod>
   </url><url>
-    <loc>https://bytememo.com/authors/walle/</loc>
+    <loc>https://bytememo.com/authors/wallezen/</loc>
     <lastmod>2020-12-20T21:51:24+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://bytememo.com/en/authors/walle/"
+                href="https://bytememo.com/en/authors/wallezen/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://bytememo.com/authors/walle/"
+                href="https://bytememo.com/authors/wallezen/"
                 />
   </url><url>
     <loc>https://bytememo.com/authors/hugo-authors/</loc>
@@ -156,7 +156,5 @@
                 />
   </url><url>
     <loc>https://bytememo.com/newsletter/</loc>
-  </url><url>
-    <loc>https://bytememo.com/authors/wallezen/</loc>
   </url>
 </urlset>
